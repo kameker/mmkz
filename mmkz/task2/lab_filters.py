@@ -183,12 +183,6 @@ def exercise_5(background: np.ndarray, cup_scene: np.ndarray, out: Path,
 
 
 def keep_largest_component(mask: np.ndarray) -> tuple[np.ndarray, int, int]:
-    """Оставляет крупнейшую 8-связную область, обходя маску и делая flood fill.
-
-    Необработанные компоненты имеют значение 255, текущая найденная компонента
-    временно заливается значением 128, а отброшенные области — значением 0.
-    Такой алгоритм буквально повторяет предложенный в задании способ.
-    """
     if mask.ndim != 2 or mask.dtype != np.uint8:
         raise ValueError("Ожидается одноканальная маска типа uint8")
 

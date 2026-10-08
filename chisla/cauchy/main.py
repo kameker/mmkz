@@ -2,7 +2,7 @@ from pathlib import Path
 
 import numpy as np
 
-from cauchy import cauchy1, cauchy2
+from chisla.cauchy.cauchy import cauchy1, cauchy2
 
 
 def third_order_equation(x, u):

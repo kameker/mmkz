@@ -3,9 +3,9 @@ from pathlib import Path
 import numpy as np
 
 if __package__:
-    from .cauchy import cauchy1
+    from ..cauchy.cauchy import cauchy1
 else:
-    from cauchy import cauchy1
+    from chisla.cauchy.cauchy import cauchy1
 
 
 def equation(x, u):
